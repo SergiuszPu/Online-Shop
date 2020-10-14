@@ -1,27 +1,18 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import MainLayout from './components/MainLayout/MainLayout';
+import Home from './components/pages/Home/HomePage';
+
 class App extends React.Component {
 
-  state = {
-    posts: [],
-  }
-
-  componentDidMount() {
-    fetch('http://localhost:8000/api/products')
-      .then(res => res.json())
-      .then(res => {
-        this.setState({ posts: res });
-    });
-  }
-  
   render() {
     return (
-      <div>
-        <ul>
-          {this.state.posts.map(post => 
-            <li key={post.id}>{post.title} , {post.content}</li>
-            )}
-        </ul>
-      </div>
+      <MainLayout>
+        <Switch>
+          <Route path='/' exact component={Home} />
+        </Switch>
+      </MainLayout>
     );
   }
 }

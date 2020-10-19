@@ -21,9 +21,23 @@ const initialState = [];
 
 export default function reducer(statePart = initialState, action = {}) {
   switch (action.type) {
-  	case LOAD_PRODUCTS:
-      return [ ...action.payload ];
+    case LOAD_PRODUCTS:
+      return [...action.payload];
     default:
       return statePart;
   }
-}; 
+
+};
+/* THUNKS */
+
+export const loadProductsRequest = () => {
+  return dispatch => {
+
+    console.log('Request started...');
+    setTimeout(() => {
+      const arr = [{ id: 'a3fssdc1', title: 'Product 1', content: 'Lorem Ipsum' }];
+      dispatch(loadProducts(arr));
+      console.log('Request finished after 2sec!');
+    }, 2000);
+  };
+};

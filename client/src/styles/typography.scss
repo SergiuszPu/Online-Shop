@@ -16,6 +16,6 @@ a {
 
   &.active {
     color: $color-text;
-    border-bottom: 1px solid $color-text-light;
+    font-weight: bold;
   }
 }

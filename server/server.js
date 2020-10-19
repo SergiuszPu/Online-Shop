@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.get('/api/products', (req, res) => {
     const data = [
-        { id: '1adfasf', title: 'Sergiusz tu jest', content: 'Photo 1' },
+        { id: '1adfasf', title: 'Sergiuszzz tu jest', content: 'Photo 1' },
         { id: '2evxc34', title: 'Tak wiec zaczynamy', content: 'Photo 2' },
     ]
     res.json(data);

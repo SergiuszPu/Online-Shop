@@ -32,7 +32,6 @@ export default function reducer(statePart = initialState, action = {}) {
 
 export const loadProductsRequest = () => {
   return dispatch => {
-
     console.log('Request started...');
     setTimeout(() => {
       const arr = [{ id: 'a3fssdc1', title: 'Product 1', content: 'Lorem Ipsum' }];

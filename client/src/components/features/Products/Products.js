@@ -1,13 +1,37 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 class Products extends React.Component {
 
-  render() {
-    return (
-      <div>Products</div>
-    );
+  componentDidMount() {
+    const { loadProducts } = this.props;
+    loadProducts();
   }
 
+  render() {
+    const { products } = this.props;
+
+    return (
+      <div>Products
+        <ul>
+          {products.map(post =>
+            <li key={post.id}>{post.title}, {post.content}
+            </li>
+          )}
+        </ul>
+      </div>
+    );
+  }
 };
 
+Products.propTypes = {
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+    })
+  ),
+  loadProducts: PropTypes.func.isRequired,
+};
 export default Products; 

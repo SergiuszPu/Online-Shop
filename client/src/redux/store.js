@@ -10,7 +10,6 @@ const rootReducer = combineReducers({
 });
 
 // create store
-const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const store = createStore(
 	rootReducer, 

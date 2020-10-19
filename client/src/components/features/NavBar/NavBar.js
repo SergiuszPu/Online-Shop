@@ -7,6 +7,7 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.scss';
 
 class NavBar extends React.Component {
+
   state = {
     links: [
       { path: '/', title: 'Home' },
@@ -15,6 +16,7 @@ class NavBar extends React.Component {
       { path: '/contact', title: 'Contact' },
     ]
   }
+
   render() {
     const { links } = this.state;
 
@@ -22,7 +24,7 @@ class NavBar extends React.Component {
       <div className='navbar'>
         <Logo />
         <MainMenu links={links}>
-          <Link  to="/cart"><FontAwesomeIcon icon={faShoppingBag} size="2x"/></Link>
+          <Link to="/cart"><FontAwesomeIcon icon={faShoppingBag} size="2x" /></Link>
         </MainMenu>
       </div>
     );

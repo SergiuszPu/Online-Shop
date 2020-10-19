@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import MainLayout from './components/MainLayout/MainLayout';
+import MainLayout from './components/layout/MainLayout/MainLayout';
 import Home from './components/pages/Home/HomePage';
 import Faq from './components/pages/Faq/FaqPage';
 import StorePolicy from './components/pages/StorePolicy/StorePolicy';

@@ -33,14 +33,13 @@ export default function reducer(statePart = initialState, action = {}) {
 };
 
 export const loadProductsRequest = () => {
-  return dispatch => {
-
-    axios.get(`${API_URL}/products`).then(res => {
+  return async dispatch => {
+    try {
+      let res = await axios.get(`${API_URL}/products`);
       dispatch(loadProducts(res.data));
-    })
 
-      .catch(err => {
-        console.log(err.message);
-      });
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 };

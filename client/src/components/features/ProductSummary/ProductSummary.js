@@ -1,23 +1,25 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 import './ProductSummary.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Card, Badge, CardImg, CardSubtitle, CardBody, CardTitle, CardLink } from 'reactstrap';
+import { Col, Card, Badge, CardImg, CardSubtitle, CardBody, CardTitle} from 'reactstrap';
 
 export class ProductSummary extends React.Component {
   render() {
-    const { tag, img, name, price } = this.props;
+    const { id, tag, img, name, price } = this.props;
     return (
       <Col className="product-summary" xs={6}>
-        <Card>
-        <Badge className="product-tag">{tag}</Badge>
-          <CardImg src={img} />
-          <CardBody>
-            <CardTitle  className="item-name">{name}</CardTitle>
-            <CardSubtitle>{price}</CardSubtitle>
-            <CardLink href={'/product'} />
-          </CardBody>
-        </Card>
+        <Link to={`/product/${id}`}>
+          <Card>
+            <Badge className="product-tag">{tag}</Badge>
+            <CardImg src={img} />
+            <CardBody>
+              <CardTitle className="item-name">{name}</CardTitle>
+              <CardSubtitle>{price}</CardSubtitle>
+            </CardBody>
+          </Card>
+        </Link>
       </Col>
     );
   }

@@ -12,10 +12,10 @@ export class ProductSummary extends React.Component {
       <Col className="product-summary" xs={6}>
         <Link to={`/product/${id}`}>
           <Card>
-            <Badge className="product-tag">{tag}</Badge>
+            <Badge color='info'>{tag}</Badge>
             <CardImg src={img} />
             <CardBody>
-              <CardTitle className="item-name">{name}</CardTitle>
+              <CardTitle>{name}</CardTitle>
               <CardSubtitle>{price}</CardSubtitle>
             </CardBody>
           </Card>

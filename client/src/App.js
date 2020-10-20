@@ -8,7 +8,7 @@ import StorePolicy from './components/pages/StorePolicy/StorePolicy';
 import Contact from './components/pages/Contact/ContactPage';
 import Cart from './components/pages/Cart/CartPage';
 import NotFound from './components/pages/NotFound/NotFoundPage';
-import Product from './components/pages/Product/ProductPage';
+import SingleProduct from './components/features/SingleProduct/SingleProductPage';
 
 class App extends React.Component {
 
@@ -21,7 +21,7 @@ class App extends React.Component {
           <Route path='/storepolicy' exact component={StorePolicy} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/cart' exact component={Cart} />
-          <Route path="/product" exact component={Product} />
+          <Route path="/product/:id" exact component={SingleProduct} />
           <Route path='/notfound' exact component={NotFound} />
         </Switch>
       </MainLayout>

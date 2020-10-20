@@ -9,7 +9,7 @@ const ProductSummary = ({ id, price, name, img }) => (
     <Link to={'product/' + id}>
       <h1>{name}</h1>
       <p>{price}</p>
-      {/* <img src={img}/> */}
+      <img src={img} alt={img}/>
     </Link>
   </div>
 );
@@ -17,7 +17,8 @@ const ProductSummary = ({ id, price, name, img }) => (
 ProductSummary.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
-  price: PropTypes.number,
+  price: PropTypes.string,
+  img:PropTypes.object,
 };
 
 export default ProductSummary; 

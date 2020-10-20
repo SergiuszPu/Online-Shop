@@ -6,7 +6,7 @@ import ProductsSummary from '../ProductSummary/ProductSummary';
 const ProductsList = ({ products }) => (
 
   <div className="products-list">
-      {products.map(post => <ProductsSummary key={post.id} {...post} />)}   
+      {products.map(product => <ProductsSummary key={product.id} {...product} />)}   
   </div>
 );
 
@@ -14,8 +14,8 @@ ProductsList.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      // title: PropTypes.string.isRequired,
-      // content: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
     })
   ),
 };

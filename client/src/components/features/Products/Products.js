@@ -2,7 +2,8 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import ProductsList from '../ProductList/ProductList';
 import Spinner from '../../common/Spinner/Spinner';
-import Alert from '../../common/Alert/Alert';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Alert } from 'reactstrap';
 
 class Products extends React.Component {
 
@@ -21,10 +22,10 @@ class Products extends React.Component {
       return <Spinner />
 
     else if (request.pending === false && request.error !== null)
-      return <Alert variant={'error'} children={request.error} />
+      return <Alert color='danger'>{request.error}</Alert>
 
     else if (request.pending === false && request.success === true && products.length === 0)
-      return <Alert variant={'info'} children={'- no posts -'} />
+      return <Alert color='info'>'- no posts -'</Alert>
   }
 };
 
@@ -32,8 +33,10 @@ Products.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      // title: PropTypes.string.isRequired,
-      // content: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
     })
   ),
   loadProducts: PropTypes.func.isRequired,

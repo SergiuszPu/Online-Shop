@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
+import './ProductList.scss'
 import ProductsSummary from '../ProductSummary/ProductSummary';
 
 const ProductsList = ({ products }) => (

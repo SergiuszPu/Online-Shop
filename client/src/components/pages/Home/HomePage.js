@@ -4,8 +4,8 @@ import Products from '../../features/Products/ProductsContainer';
 // import './HomePage.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
-import TopCarousel from '../../utils/Carousel/Carousel';
-import ModalCode from '../../utils/Modal/Modal';
+import TopCarousel from '../../features/Carousel/Carousel';
+import ModalCode from '../../features/Modal/Modal';
 
 const HomePage = () => (
   <Container>

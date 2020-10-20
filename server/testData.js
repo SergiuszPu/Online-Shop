@@ -5,6 +5,7 @@ const loadTestData = async () => {
   const data = [
     {
       id: '1234a',
+      tag: 'new',
       img: { src: '../client/src/images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00 $',
@@ -12,6 +13,7 @@ const loadTestData = async () => {
     },
     {
       id: '2234b',
+      tag: 'last one',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00 $',
@@ -19,6 +21,7 @@ const loadTestData = async () => {
     },
     {
       id: '3234c',
+      tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00 $',
@@ -26,6 +29,7 @@ const loadTestData = async () => {
     },
     {
       id: '4234d',
+      tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00',
@@ -33,6 +37,7 @@ const loadTestData = async () => {
     },
     {
       id: '5234e',
+      tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00',
@@ -40,6 +45,7 @@ const loadTestData = async () => {
     },
     {
       id: '6234g',
+      tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: '26666.00',

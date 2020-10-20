@@ -4,9 +4,11 @@ import Products from '../../features/Products/ProductsContainer';
 // import './HomePage.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
+import TopCarousel from '../../utils/Carousel/Carousel';
 
 const HomePage = () => (
   <Container>
+    <TopCarousel />
     <Row>
       <Col xs={3}>
         <ProductsCounter />

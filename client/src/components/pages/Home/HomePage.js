@@ -5,10 +5,12 @@ import Products from '../../features/Products/ProductsContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import TopCarousel from '../../utils/Carousel/Carousel';
+import ModalCode from '../../utils/Modal/Modal';
 
 const HomePage = () => (
   <Container>
     <TopCarousel />
+    <ModalCode />
     <Row>
       <Col xs={3}>
         <ProductsCounter />

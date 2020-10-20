@@ -3,20 +3,21 @@ import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import './ProductSummary.scss';
 
-const ProductSummary = ({ id, title, content }) => (
+const ProductSummary = ({ id, price, name, img }) => (
 
   <div className="product-summary">
     <Link to={'product/' + id}>
-      <h1>{title}</h1>
-      <p>{content}</p>
+      <h1>{name}</h1>
+      <p>{price}</p>
+      {/* <img src={img}/> */}
     </Link>
   </div>
 );
 
 ProductSummary.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.number,
 };
 
 export default ProductSummary; 

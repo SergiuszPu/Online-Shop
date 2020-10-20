@@ -11,6 +11,11 @@
   
   li {
     margin: 0 $base-size;
+    a {
+      border-bottom: 2px solid $color-text-bright;
+      &:hover {
+        border-bottom: 2px solid $color-light-blue;
+      }
+    }
   }
-
 } 

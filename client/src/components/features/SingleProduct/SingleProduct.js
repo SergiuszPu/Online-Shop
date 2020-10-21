@@ -60,8 +60,8 @@ SingleProduct.propTypes = {
       id: PropTypes.string.isRequired,
       tag: PropTypes.string.isRequired,
       img: PropTypes.object.isRequired,
-      name: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
+      name: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
       desc: PropTypes.string.isRequired,
     })
   ),

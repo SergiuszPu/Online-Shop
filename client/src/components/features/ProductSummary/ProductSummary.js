@@ -29,7 +29,7 @@ ProductSummary.propTypes = {
   id: PropTypes.string,
   tag: PropTypes.string,
   name: PropTypes.string,
-  price: PropTypes.string,
+  price: PropTypes.number,
   img: PropTypes.object,
 };
 

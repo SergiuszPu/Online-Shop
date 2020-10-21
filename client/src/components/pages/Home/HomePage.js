@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import TopCarousel from '../../features/Carousel/Carousel';
 import ModalCode from '../../features/Modal/Modal';
+import Sort from '../../features/Sort/SortContainer';
 
 const HomePage = () => (
   <Container>
@@ -13,6 +14,7 @@ const HomePage = () => (
     <ModalCode />
     <Row>
       <Col xs={3}>
+        <Sort />
         <ProductsCounter />
       </Col>
       <Col xs={9}>

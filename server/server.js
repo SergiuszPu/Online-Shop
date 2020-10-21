@@ -3,7 +3,9 @@ const cors = require('cors');
 const config = require('./config');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
+const mongoSanitize = require('mongo-sanitize');
 const loadTestData = require('./testData');
+
 
 const app = express();
 
@@ -14,6 +16,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/api', productRoutes);
 app.use(helmet());
+app.use((req, res, next) => {
+    mongoSanitize(req.body);
+    next();
+});
+
+
 
 // connects our back end code with the database
 mongoose.connect(config.DB, { useNewUrlParser: true });

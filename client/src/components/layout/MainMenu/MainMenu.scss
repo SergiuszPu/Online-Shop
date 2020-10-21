@@ -11,6 +11,9 @@
   
   li {
     margin: 0 $base-size;
+    .navlink {
+      border-bottom: 2px solid $color-text-bright;
+    }
     a {
       border-bottom: 2px solid $color-text-bright;
       &:hover {
@@ -19,3 +22,12 @@
     }
   }
 } 
+
+@media (max-width: 767px) {
+  .main-menu.none {
+    display: none;
+  }
+  .main-menu.mobile-menu {
+    display: flex;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../common/Logo/Logo';
 import MainMenu from '../../layout/MainMenu/MainMenu';
@@ -6,30 +7,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.scss';
 
-class NavBar extends React.Component {
 
-  state = {
-    links: [
-      { path: '/', title: 'Home' },
-      { path: '/faq', title: 'FAQ' },
-      { path: '/storepolicy', title: 'Store Policy' },
-      { path: '/contact', title: 'Contact' },
-    ]
-  }
+const NavBar = (props) => {
 
-  render() {
-    const { links } = this.state;
+  const { showMenu, toggleMenu } = props;
 
-    return (
-      <div className='navbar'>
-        <Logo />
-        <div className="navbar-wrapper">
-          <MainMenu links={links} />
-          <NavLink className="cart-icon" to="/cart"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
-        </div>
+  return (
+    <nav className={"navbar " + (showMenu ? "nav-mobile" : "")}>
+      <Logo toggleMenu={toggleMenu} />
+      <div className="navbar-wrapper">
+        <MainMenu showMenu={showMenu} />
+        <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
       </div>
-    );
-  }
+    </nav>
+  );
+}
+
+NavBar.propTypes = {
+  showMenu: PropTypes.bool,
+  toggleMenu: PropTypes.func
 }
 
 export default NavBar; 

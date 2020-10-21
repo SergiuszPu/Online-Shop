@@ -15,13 +15,13 @@ export const getPages = ({ products }) => Math.ceil(products.amount / products.p
 export const getPresentPage = ({ products }) => products.presentPage;
 export const getProductsSort = ({ products }) => {
   const sortProducts = [...products.data].sort((a, b) => {
-       if (a[products.key] > b[products.key]) return products.direction === 'asc' ? 1 : -1;
-       if (a[products.key] < b[products.key]) return products.direction === 'asc' ? -1 : 1;
-       return 0;
+    if (a[products.key] > b[products.key]) return products.direction === 'asc' ? 1 : -1;
+    if (a[products.key] < b[products.key]) return products.direction === 'asc' ? -1 : 1;
+    return 0;
   });
   return sortProducts;
 };
-
+export const getMenuState = products => products.showMenu;
 
 
 /* ACTIONS */
@@ -34,6 +34,8 @@ export const ERROR_REQUEST = createActionName('ERROR_REQUEST');
 export const RESET_REQUEST = createActionName('RESET_REQUEST');
 export const LOAD_PRODUCTS_PAGE = createActionName('LOAD_PRODUCTS_PAGE');
 export const SORT_OPTIONS = createActionName('SORT_OPTIONS');
+export const TOGGLE_MENU = createActionName('TOGGLE_MENU');
+
 
 export const loadProducts = payload => ({ payload, type: LOAD_PRODUCTS });
 export const loadSingleProduct = payload => ({ payload, type: LOAD_SINGLE_PRODUCT });
@@ -43,7 +45,7 @@ export const errorRequest = error => ({ error, type: ERROR_REQUEST });
 export const resetRequest = () => ({ type: RESET_REQUEST });
 export const loadProductsByPage = payload => ({ payload, type: LOAD_PRODUCTS_PAGE });
 export const sortOptions = payload => ({ payload, type: SORT_OPTIONS });
-
+export const toggleMenu = () => ({ type: TOGGLE_MENU });
 
 /* INITIAL STATE */
 
@@ -60,6 +62,7 @@ const initialState = {
   amount: 0,
   productsPerPage: 6,
   productsPage: 1,
+  showMenu: false,
 };
 
 /* REDUCER */
@@ -91,7 +94,13 @@ export default function reducer(statePart = initialState, action = {}) {
         ...statePart,
         key: action.payload.key,
         direction: action.payload.direction,
-      }
+      };
+    case TOGGLE_MENU:
+      const menuState = !statePart.showMenu;
+      return {
+        ...statePart,
+        showMenu: menuState
+      };
     default:
       return statePart;
   }

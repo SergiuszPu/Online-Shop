@@ -24,10 +24,12 @@
 } 
 
 @media (max-width: 767px) {
-  .main-menu.none {
+  .main-menu {
     display: none;
   }
-  .main-menu.mobile-menu {
+  .mobile-menu {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }

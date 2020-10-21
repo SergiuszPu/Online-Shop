@@ -13,11 +13,11 @@ const HomePage = () => (
     <TopCarousel />
     <ModalCode />
     <Row>
-      <Col xs={3}>
+      <Col xs={4}>
         <Sort />
         <ProductsCounter />
       </Col>
-      <Col xs={9}>
+      <Col xs={8}>
         <Products />
       </Col>
     </Row>

@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import {
   getProductsSort,
-  getProducts, getRequest,
+  getRequest,
   loadProductsByPageRequest,
-  getPages, presentPage
+  getPages, getpresentPage
 } from '../../../redux/productRedux';
 import Products from './Products';
 
@@ -11,7 +11,7 @@ const mapStateToProps = state => ({
   products: getProductsSort(state),
   request: getRequest(state),
   pages: getPages(state),
-  presentPage: presentPage(state),
+  presentPage: getpresentPage(state),
 })
 
 const mapDispatchToProps = dispatch => ({

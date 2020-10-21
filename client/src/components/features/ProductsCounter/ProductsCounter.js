@@ -7,7 +7,7 @@ class ProductsCounter extends React.Component {
 
     return (
       <div>
-        <div>Products available: {counter > 0 ? counter : ' 0 '}</div>
+        <div className="counter">Products available: {counter > 0 ? counter : ' 0 '}</div>
       </div>
     );
   }

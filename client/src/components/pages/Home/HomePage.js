@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductsCounter from '../../features/ProductsCounter/ProductsCounterContainer';
 import Products from '../../features/Products/ProductsContainer';
 // import './HomePage.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +14,6 @@ const HomePage = () => (
     <Row>
       <Col xs={4}>
         <Sort />
-        <ProductsCounter />
       </Col>
       <Col xs={8}>
         <Products />

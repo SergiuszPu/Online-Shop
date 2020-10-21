@@ -1,8 +1,9 @@
 @import '../../../styles/settings.scss';
 
 .single-product {
+	font-size: $base-size * 1.2;
 	.card-text {
-		margin: 10px 0;
+		margin: 0.6rem 0;
 	}
 	.btn {
 		width: 8rem;

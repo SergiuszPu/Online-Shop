@@ -7,7 +7,7 @@ const loadTestData = async () => {
     {
       id: '1234a',
       tag: 'new',
-      img: { src:'./../../public/1.jpg'},
+      img: { src:'../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -15,7 +15,7 @@ const loadTestData = async () => {
     {
       id: '2234b',
       tag: 'last one',
-      img: { src:'./../client/public/1.jpg'},
+      img: { src:'../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -23,7 +23,7 @@ const loadTestData = async () => {
     {
       id: '3234c',
       tag: 'new',
-      img: { src:'../../../public/1.jpg'},
+      img: { src:'../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -31,7 +31,7 @@ const loadTestData = async () => {
     {
       id: '4234d',
       tag: '',
-      img: { src:'../../../../1.jpg'},
+      img: { src:'../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -39,7 +39,7 @@ const loadTestData = async () => {
     {
       id: '5234e',
       tag: '',
-      img: { src: '../../../images/1.jpg'},
+      img: { src: '../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -47,7 +47,7 @@ const loadTestData = async () => {
     {
       id: '6234g',
       tag: '',
-      img: { src: '../../../images/1.jpg'},
+      img: { src: '../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -55,7 +55,7 @@ const loadTestData = async () => {
     {
       id: '7234a',
       tag: '',
-      img: { src: '../../../images/2.jpg'},
+      img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
       price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -63,7 +63,7 @@ const loadTestData = async () => {
     {
       id: '8234a',
       tag: '',
-      img: { src: '../../../images/2jpg'},
+      img: { src: '../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
       price: 17297.0,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -95,7 +95,7 @@ const loadTestData = async () => {
     {
       id: '122341',
       tag: '',
-      img: { src: '../../../images/2.jpg'},
+      img: { src: '../../../images/1.jpg'},
       name: 'Yt',
       price: 38999.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',

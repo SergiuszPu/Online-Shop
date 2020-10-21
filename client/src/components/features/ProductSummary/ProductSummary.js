@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import './ProductSummary.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Card, Badge, CardImg, CardSubtitle, CardBody, CardTitle} from 'reactstrap';
+import { Col, Card, Badge, CardImg, CardSubtitle, CardBody, CardTitle } from 'reactstrap';
 
 export class ProductSummary extends React.Component {
   render() {
@@ -12,7 +12,7 @@ export class ProductSummary extends React.Component {
       <Col className="product-summary" xs={6}>
         <Link to={`/product/${id}`}>
           <Card>
-            <Badge color='info'>{tag}</Badge>
+            {tag ? <Badge color="info">{tag}</Badge> : <span className="non-badge"></span>}
             <CardImg src={img} />
             <CardBody>
               <CardTitle>{name}</CardTitle>

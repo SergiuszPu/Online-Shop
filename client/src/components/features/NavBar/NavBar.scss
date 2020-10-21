@@ -9,12 +9,18 @@
 	transition: .3s;
 		.cart-icon {			
 		color: $color-text;
-		padding: 5px;
+		margin-left: 14px;
+		font-size: $base-size * 2;
 		&:hover {
 			color: $color-light-blue;
 		}
 		&.active {
 			color: $color-light-blue;
 		}
+	}
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}	
 } 

@@ -63,7 +63,6 @@ SingleProduct.propTypes = {
     })
   ),
   loadProducts: PropTypes.func.isRequired,
-  resetRequest: PropTypes.func.isRequired,
 };
 
 export default withRouter(props => <SingleProduct {...props} />); 

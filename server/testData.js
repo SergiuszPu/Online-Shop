@@ -9,7 +9,7 @@ const loadTestData = async () => {
       tag: 'new',
       img: { src:'./../../public/1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00 $',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -17,7 +17,7 @@ const loadTestData = async () => {
       tag: 'last one',
       img: { src:'./../client/public/1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00 $',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -25,7 +25,7 @@ const loadTestData = async () => {
       tag: 'new',
       img: { src:'../../../public/1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00 $',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -33,7 +33,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src:'../../../../1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -41,7 +41,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -49,7 +49,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/1.jpg'},
       name: 'Canyon Sender CFR',
-      price: '26666.00',
+      price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -57,7 +57,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
-      price: '$359.99',
+      price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -65,7 +65,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2jpg'},
       name: 'Canyon Sender CFR',
-      price: '$1729.00',
+      price: 17297.0,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -73,7 +73,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2.jpg'},
       name: 'Canyon Sender CFR',
-      price: '$1729.00',
+      price: 1729.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -81,7 +81,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2.jpg'},
       name: 'Yt',
-      price: '$1765.00',
+      price: 1785.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -89,7 +89,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2.jpg'},
       name: 'Yt',
-      price: '$1099.99',
+      price: 1099.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -97,7 +97,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/2.jpg'},
       name: 'Yt',
-      price: '$389.99',
+      price: 38999.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
   ];

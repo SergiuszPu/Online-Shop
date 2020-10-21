@@ -8,11 +8,11 @@ const createActionName = name => `app/${reducerName}/${name}`;
 /* SELECTORS */
 
 export const getProducts = ({ products }) => products.data;
-export const getProductsCounter = ({ products }) => products.data.length;
+export const getProductsCounter = ({ products }) => products.amount;
 export const getRequest = ({ products }) => products.request;
 export const getSingleProduct = ({ products }) => products.singleProduct;
 export const getPages = ({ products }) => Math.ceil(products.amount / products.productsPerPage);
-export const getpresentPage = ({ products }) => products.presentPage;
+export const getPresentPage = ({ products }) => products.presentPage;
 export const getProductsSort = ({ products }) => {
   const sortProducts = [...products.data].sort((a, b) => {
        if (a[products.key] > b[products.key]) return products.direction === 'asc' ? 1 : -1;

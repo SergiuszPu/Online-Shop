@@ -11,7 +11,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '2234b',
@@ -20,7 +20,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '3234c',
@@ -29,7 +29,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '4234d',
@@ -38,7 +38,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '5234e',
@@ -47,7 +47,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '6234g',
@@ -56,7 +56,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '7234a',
@@ -65,7 +65,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '8234a',
@@ -74,7 +74,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 17297.0,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '9234a',
@@ -83,7 +83,7 @@ const loadTestData = async () => {
       name: 'Canyon Sender CFR',
       price: 1729.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '10234a',
@@ -92,7 +92,7 @@ const loadTestData = async () => {
       name: 'Yt',
       price: 1785.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '11234a',
@@ -101,7 +101,7 @@ const loadTestData = async () => {
       name: 'Yt',
       price: 1099.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '122341',
@@ -110,7 +110,7 @@ const loadTestData = async () => {
       name: 'Yt',
       price: 38999.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
   ];
 

@@ -5,14 +5,12 @@ import { PropTypes } from 'prop-types';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import CartProduct from './CartProduct';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Alert, Button, Input } from 'reactstrap';
+import { Container, Alert, Button, Input } from 'reactstrap';
 
 import "./Cart.scss";
 
 class Cart extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+
 
     handleDiscount = () => {
         const { makeDiscount, calculatePrice } = this.props;
@@ -28,7 +26,7 @@ class Cart extends React.Component {
 
     minusCounter = (products) => {
         const { minusFromCounter, calculatePrice } = this.props;
-        products.qtyCount === 1 ? void (0) : minusFromCounter(products.id);
+        products.qty === 1 ? void (0) : minusFromCounter(products.id);
         calculatePrice();
     }
 
@@ -48,22 +46,20 @@ class Cart extends React.Component {
         return (
             <Container className="cart">
                 <PageTitle>Shopping Cart</PageTitle>
-                <Row className="cart-wrapper">
-                    <Col md={12}>
-                        {cart.length !== 0 ? cart.map(el =>
-                            <CartProduct
-                                key={uuid()}
-                                minusFromCounter={this.minusQty}
-                                addToCounter={this.plusQty}
-                                handleDeleteProduct={this.handleDeleteProduct}
-                                products={el}
-                            />) : <Alert color="danger">Your shopping cart is empty!</Alert>}
-                    </Col>
-                </Row>
+                <div className="cart-wrapper">
+                    {cart.length !== 0 ? cart.map(el =>
+                        <CartProduct
+                            key={uuid()}
+                            minusFromCounter={this.minusQty}
+                            addToCounter={this.plusQty}
+                            handleDeleteProduct={this.handleDeleteProduct}
+                            products={el}
+                        />) : <Alert color="danger">Your shopping cart is empty!</Alert>}
+                </div>
                 <div className="cart-summary">
                     <Input placeholder="discount code" />
                     <p>Total: ${price.toFixed(2)}</p>
-                    <Button>Summary</Button>
+                    <Button color="info">Summary</Button>
                 </div>
             </Container>
         );

@@ -7,6 +7,7 @@ import CartProduct from './CartProduct';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Alert, Button } from 'reactstrap';
 import Discount from '../../common/Discount/Discount';
+import { Link } from 'react-router-dom';
 
 import "./Cart.scss";
 
@@ -65,7 +66,9 @@ class Cart extends React.Component {
                     </Discount>
                     <p>Total: ${price.toFixed(2)}</p>
                     {cart.length !== 0 ?
-                        <Button color="info">Summary</Button> :
+                          <Link to={'summary'}>
+                          <Button color="info">Summary</Button> 
+                        </Link> :
                         <Button color="info" disabled>Summary</Button>
                     }
                 </div>

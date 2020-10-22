@@ -15,10 +15,12 @@ const NavBar = (props) => {
 
   return (
     <nav className='navbar'>
-      <Logo/>
+      <Logo />
       <div className={"navbar-wrapper" + (showMenu ? " nav-mobile" : "")}>
         <MainMenu showMenu={showMenu} />
-        <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
+        <NavLink className="cart-icon" to="/cart" activeClassName="active">
+          <FontAwesomeIcon icon={faShoppingBag} />
+        </NavLink>
         <FontAwesomeIcon icon={faBars} className="burger" onClick={toggleMenu} />
       </div>
     </nav>

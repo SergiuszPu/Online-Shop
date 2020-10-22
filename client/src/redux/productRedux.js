@@ -35,6 +35,10 @@ export const RESET_REQUEST = createActionName('RESET_REQUEST');
 export const LOAD_PRODUCTS_PAGE = createActionName('LOAD_PRODUCTS_PAGE');
 export const SORT_OPTIONS = createActionName('SORT_OPTIONS');
 export const TOGGLE_MENU = createActionName('TOGGLE_MENU');
+export const ADD_TO_CART = createActionName('ADD_TO_CART');
+export const CART_QTY = createActionName('CART_QTY');
+export const REMOVE_QTY = createActionName('REMOVE_QTY');
+export const REMOVE_PRODUCT = createActionName('REMOVE_PRODUCT');
 
 
 export const loadProducts = payload => ({ payload, type: LOAD_PRODUCTS });
@@ -46,6 +50,10 @@ export const resetRequest = () => ({ type: RESET_REQUEST });
 export const loadProductsByPage = payload => ({ payload, type: LOAD_PRODUCTS_PAGE });
 export const sortOptions = payload => ({ payload, type: SORT_OPTIONS });
 export const toggleMenu = () => ({ type: TOGGLE_MENU });
+export const addToCart = payload => ({ payload, type: ADD_TO_CART });
+export const cartQty = payload => ({ payload, type: CART_QTY });
+export const removeQty = payload => ({ payload, type: REMOVE_QTY });
+export const removeProduct = payload => ({ payload, type: REMOVE_PRODUCT });
 
 /* INITIAL STATE */
 
@@ -63,6 +71,8 @@ const initialState = {
   productsPerPage: 6,
   productsPage: 1,
   showMenu: false,
+  productAdd: [],
+  summary: 0,
 };
 
 /* REDUCER */
@@ -96,11 +106,49 @@ export default function reducer(statePart = initialState, action = {}) {
         direction: action.payload.direction,
       };
     case TOGGLE_MENU:
-      const menuState = !statePart.showMenu;
+      let menuState = !statePart.showMenu;
       return {
         ...statePart,
         showMenu: menuState
       };
+    case ADD_TO_CART:
+      let productAdd = [...statePart.productAdd, action.payload];
+      statePart.productAdd.map((products) => {
+        if (products.id === action.payload.id) {
+          products.qty += 1;
+          productAdd = [...statePart.productAdd]
+        }
+      })
+      return {
+        productAdd: productAdd,
+        summary: statePart.summary + action.payload.price
+      };
+    case CART_QTY:
+      statePart.productAdd.map((products) => {
+        if (products.id === action.payload.id) {
+          products.qty += 1
+        }
+      })
+      return {
+        productAdd: [...statePart.productAdd],
+        summary: statePart.summary + action.payload.price,
+      };
+    case REMOVE_QTY:
+      statePart.productAdd.map((products) => {
+        if (products.id === action.payload.id) {
+          products.qty -= 1
+        }
+      })
+      return {
+        productAdd: statePart.productAdd.filter(function (object) { return object.qty !== 0 }),
+        summary: statePart.summary - action.payload.price
+      };
+    case REMOVE_PRODUCT:
+      return {
+        productAdd: [],
+        summary: 0
+      };
+
     default:
       return statePart;
   }

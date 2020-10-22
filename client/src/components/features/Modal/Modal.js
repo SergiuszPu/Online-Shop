@@ -21,7 +21,7 @@ const ModalCode = (props) => {
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Copy</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
+          <Button color="info" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>

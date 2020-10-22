@@ -10,6 +10,7 @@ import { Container, Button, Table } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import './CartSummary.scss';
+import BackButton from '../../common/BackButton/BackButton';
 
 const Summary = (props) => {
 
@@ -20,6 +21,7 @@ const Summary = (props) => {
             <Container className="summary">
                 <PageTitle>Order summary</PageTitle>
                 <div className="summary-wrapper">
+                    <BackButton />
                     <div className="scroll-wrapper">
                         <Table>
                             <thead>

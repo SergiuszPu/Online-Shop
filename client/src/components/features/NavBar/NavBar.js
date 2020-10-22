@@ -4,14 +4,15 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../common/Logo/Logo';
 import MainMenu from '../../layout/MainMenu/MainMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingBag, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import CartIcon from '../../common/CartIcon/CartIcon';
 
 import './NavBar.scss';
 
 
 const NavBar = (props) => {
 
-  const { showMenu, toggleMenu } = props;
+  const { showMenu, toggleMenu, cart } = props;
 
   return (
     <nav className='navbar'>
@@ -22,7 +23,7 @@ const NavBar = (props) => {
       <div className="navbar-wrapper">
         <MainMenu showMenu={showMenu} />
         <NavLink className="cart-icon" to="/cart" activeClassName="active">
-          <FontAwesomeIcon icon={faShoppingBag} />
+          <CartIcon itemsQty={cart.length} />
         </NavLink>
       </div>
     </nav>
@@ -31,7 +32,8 @@ const NavBar = (props) => {
 
 NavBar.propTypes = {
   showMenu: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired
+  toggleMenu: PropTypes.func.isRequired,
+  cart: PropTypes.array.isRequired,
 }
 
 export default NavBar; 

@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import './CartSummary.scss';
 import BackButton from '../../common/BackButton/BackButton';
+import ModalPay from '../../features/Modal/ModalPay';
 
 const Summary = (props) => {
 
@@ -54,7 +55,7 @@ const Summary = (props) => {
                     Continue shopping
                   </Button>
                             </Link>
-                            <Button color="info">Pay</Button>
+                            <ModalPay />
                         </div>
                     </div>
                 </div>

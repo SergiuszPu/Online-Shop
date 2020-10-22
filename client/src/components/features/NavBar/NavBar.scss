@@ -38,4 +38,7 @@
 		color: $color-text;
 		font-size: $base-size * 1.8;
 	}
+	.burger.active {
+		color: $color-light-blue;
+	}
 } 

@@ -22,7 +22,7 @@ export const getProductsSort = ({ products }) => {
   return sortProducts;
 };
 export const getMenuState = ({ products }) => products.showMenu;
-export const getCart = products => products.cart;
+export const getCart = ({ products }) => products.cart;
 
 /* ACTIONS */
 
@@ -128,7 +128,7 @@ export default function reducer(statePart = initialState, action = {}) {
         if (products.id === action.payload.id) {
           products.qty += 1
         }
-      }) 
+      })
       return {
         productAdd: [...statePart.productAdd],
         summary: statePart.summary + action.payload.price,

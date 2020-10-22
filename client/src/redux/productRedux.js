@@ -48,7 +48,7 @@ export const PLUS_QTY = createActionName('PLUS_QTY');
 export const MINUS_QTY = createActionName('MINUS_QTY');
 export const MAKE_DISCOUNT = createActionName('MAKE_DISCOUNT');
 export const CALCULATE_PRICE = createActionName('CALCULATE_PRICE');
-export const MAKE_ORDER = createActionName('MAKE_ORDER');
+
 
 
 export const loadProducts = payload => ({ payload, type: LOAD_PRODUCTS });
@@ -69,7 +69,6 @@ export const plusQty = id => ({ id, type: PLUS_QTY });
 export const minusQty = id => ({ id, type: MINUS_QTY });
 export const makeDiscount = () => ({ type: MAKE_DISCOUNT });
 export const calculatePrice = () => ({ type: CALCULATE_PRICE });
-export const makeOrder = () => ({ type: MAKE_ORDER });
 
 /* INITIAL STATE */
 
@@ -94,7 +93,6 @@ const initialState = {
   discountCode: 'SDFV86F',
   discountActive: false,
   totalPrice: 0,
-  orderStatus: false,
 };
 
 /* REDUCER */
@@ -174,10 +172,6 @@ export default function reducer(statePart = initialState, action = {}) {
       return {
         ...statePart, totalPrice: roundPrice
       }
-    case MAKE_ORDER:
-      return {
-        ...statePart, orderStatus: true, cart: [], totalPrice: 0
-      }
     default:
       return statePart;
   }
@@ -242,21 +236,3 @@ export const loadProductsByPageRequest = (page, productsPerPage) => {
   };
 };
 
-export const cartSummary = (cart, price) => {
-  return async dispatch => {
-
-    dispatch(startRequest());
-    try {
-
-      await axios.post(`${API_URL}/products/summary`, cart);
-      await axios.post(`${API_URL}/products/summary`, price);
-      await new Promise((resolve, reject) => setTimeout(resolve, 2000));
-
-      dispatch(makeOrder());
-      dispatch(endRequest());
-
-    } catch (e) {
-      dispatch(errorRequest(e.message));
-    }
-  }
-}

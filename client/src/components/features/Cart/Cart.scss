@@ -23,14 +23,24 @@
 	input-group {
 		margin-bottom: 0.9rem;
 		max-width: max-content;
-		padding: 0.5rem 0;
+		height: 40px;
+		input {
+			height: 40px;
+		}
+	}
+	.alert {
+		font-size: $base-size*1.1;
+		padding: 0 1rem;
+		min-height: 40px;
+		display: flex;
+		align-items: center;
 	}
 	.alert-warning {
 		cursor: pointer;
 	}
 }
 
-@media (max-width: 387px) {
+@media (max-width: 479px) {
 	.cart {
 		text-align: center;
 		.cart-short-text {

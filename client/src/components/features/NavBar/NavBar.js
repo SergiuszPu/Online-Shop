@@ -15,7 +15,7 @@ const NavBar = (props) => {
 
   return (
     <nav className='navbar'>
-      <Logo toggleMenu={toggleMenu} />
+      <Logo/>
       <div className={"navbar-wrapper" + (showMenu ? " nav-mobile" : "")}>
         <MainMenu showMenu={showMenu} />
         <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>

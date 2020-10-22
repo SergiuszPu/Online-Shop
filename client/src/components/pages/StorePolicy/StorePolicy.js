@@ -6,7 +6,7 @@ import './StorePolicy.scss'
 
 const StorePolicy = () => (
   <Container>
-    <PageTitle>Store Policy</PageTitle>
+    <PageTitle className="storepolicy">Store Policy</PageTitle>
     <div className="storepolicy-wrapper">
       <p>$1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu

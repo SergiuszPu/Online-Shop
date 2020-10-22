@@ -6,6 +6,9 @@
 	.cart-product {
 		align-items: center;
 		margin-bottom: 0.7rem;
+		img {
+			width: 100%;
+		}
 		.product-price {
 			display: flex;
 			justify-content: center;
@@ -17,10 +20,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	input {
-		width: auto;
-		max-width: 8.5rem;
-		text-align: center;
+	input-group {
 		margin-bottom: 10px;
+		max-width: max-content;
+	}
+}
+
+@media (max-width: 387px) {
+	.cart {
+		text-align: center;
 	}
 }

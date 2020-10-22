@@ -17,21 +17,21 @@ const CartProduct = (props) => {
     return (
         <Row className="cart-product">
             <Col md={2}>
-                <Link target="_blank" to={'product/' + products.id}>
-                    <img alt="item" src={`../../../images/${products.img}`} />
+                <Link to={'product/' + products.id}>
+                    <img src={products.img.src} alt="item" />
                 </Link>
             </Col>
             <Col md={6}>
                 <h5>{products.name}</h5>
                 <p>{shortDesc}</p>
             </Col>
-            <Col md={2} className="product-price">${ products.price }</Col>
+            <Col md={2} className="product-price">${products.price}</Col>
             <Col md={2}>
                 <CounterProducts
                     products={products}
                     minusFromCounter={minusFromCounter}
                     addToCounter={addToCounter}
-                    handledeleteProduct={handleDeleteProduct}
+                    deleteProduct={handleDeleteProduct}
                 />
             </Col>
         </Row>

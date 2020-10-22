@@ -2,7 +2,7 @@ import React from 'react';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'reactstrap';
-import '../StorePolicy/StorePolicy.scss'
+import '../Faq/FaqPage.scss'
 
 const FaqPage = () => (
   <Container>

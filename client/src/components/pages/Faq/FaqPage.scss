@@ -1,13 +1,13 @@
 @import '../../../styles/settings.scss';
 
-.storepolicy-wrapper {
+.faq-wrapper {
 	padding: 1rem;
-	text-align: justify;
 }
+
 @media (max-width: 387px) {
-	.storepolicy {
+	.faq {
 		text-align: center;
-		.storepolicy-wrapper {
+		.faq-wrapper {
 			font-size: $base-size;
 		}
 	}

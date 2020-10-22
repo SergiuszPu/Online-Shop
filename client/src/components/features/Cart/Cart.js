@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import CartProduct from './CartProduct';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Alert, Button, Input } from 'reactstrap';
+import { Container, Alert, Button, InputGroup, InputGroupAddon, Input } from 'reactstrap';
 
 import "./Cart.scss";
 
@@ -50,16 +50,24 @@ class Cart extends React.Component {
                     {cart.length !== 0 ? cart.map(el =>
                         <CartProduct
                             key={uuid()}
-                            minusFromCounter={this.minusQty}
-                            addToCounter={this.plusQty}
+                            minusFromCounter={this.minusCounter}
+                            addToCounter={this.plusCounter}
                             handleDeleteProduct={this.handleDeleteProduct}
                             products={el}
                         />) : <Alert color="danger">Your shopping cart is empty!</Alert>}
                 </div>
                 <div className="cart-summary">
-                    <Input placeholder="discount code" />
+                    <InputGroup>
+                        <Input placeholder="discount code" />
+                        <InputGroupAddon addonType="append">
+                            <Button color="info">Done!</Button>
+                        </InputGroupAddon>
+                    </InputGroup>
                     <p>Total: ${price.toFixed(2)}</p>
-                    <Button color="info">Summary</Button>
+                    {cart.length !== 0 ?
+                        <Button color="info">Summary</Button> :
+                        <Button color="info" disabled>Summary</Button>
+                    }
                 </div>
             </Container>
         );

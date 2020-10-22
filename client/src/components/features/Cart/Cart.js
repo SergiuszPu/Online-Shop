@@ -1,43 +1,44 @@
 import React from 'react';
 import CartOrder from './CartOrder';
 import CartSummary from './CartSummary';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Row, Col, Button } from 'reactstrap';
 
-// Import styles
-// import "./Cart.scss";
+import "./Cart.scss";
 
 export default class Cart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      "summaryOrder": false
-    }
-  }
-
-  initialSummary() {
-    this.setState({
-      "summaryOrder": true
-    })
-  }
-
-  render() {
-    if (this.state.summaryOrder === false) {
-      return (
-        <div className="cart">
-          <CartOrder />
-          <div className="row">
-            <div className="col-8"></div>
-            <div className="col-4">
-              <button onClick={() => { this.initialSummary() }}>Pay</button>
-            </div>
-          </div>
-        </div>
-      );
+    constructor(props) {
+        super(props);
+        this.state = {
+            "summaryOrder": false
+        }
     }
 
-    else if (this.state.summaryOrder === true) {
-      return (
-        <CartSummary />
-      );
+    initialSummary() {
+        this.setState({
+            "summaryOrder": true
+        })
     }
-  }
+
+    render() {
+        if (this.state.summaryOrder === false) {
+            return (
+                <div className="cart">
+                    <CartOrder />
+                    <Row>
+                        <Col md={8}></Col>
+                        <Col md={4}>
+                            <Button onClick={() => { this.initialSummary() }}>Pay</Button>
+                        </Col>
+                    </Row>
+                </div>
+            );
+        }
+
+        else if (this.state.summaryOrder === true) {
+            return (
+                <CartSummary />
+            );
+        }
+    }
 }; 

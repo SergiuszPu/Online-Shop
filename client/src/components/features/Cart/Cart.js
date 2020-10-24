@@ -1,5 +1,5 @@
 import React from 'react';
-import uuid from 'uuidv4';
+import v4 from 'uuid/v4';
 import { PropTypes } from 'prop-types';
 
 import PageTitle from '../../common/PageTitle/PageTitle';
@@ -51,7 +51,7 @@ class Cart extends React.Component {
                 <div className="cart-wrapper">
                     {cart.length !== 0 ? cart.map(el =>
                         <CartProduct
-                            key={uuid()}
+                            key={v4()}
                             minusFromCounter={this.minusCounter}
                             addToCounter={this.plusCounter}
                             handleDeleteProduct={this.handleDeleteProduct}

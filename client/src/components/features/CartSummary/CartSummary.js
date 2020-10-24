@@ -52,7 +52,7 @@ const Summary = (props) => {
                             <Link to="/">
                                 <Button color="info">
                                     <FontAwesomeIcon className="back-icon" icon={faChevronLeft} />
-                    Continue shopping
+                                    Continue shopping
                   </Button>
                             </Link>
                             <ModalPay />

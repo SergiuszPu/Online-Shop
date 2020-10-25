@@ -8,7 +8,7 @@
     "node": "12.18.3"
   },
   "scripts": {
-    "start": "npm-run-all -p -l start:*",
+    "start": "npm-run-all -p -l start:* && node app.js",
     "start:server": "cd server && yarn start",
     "start:client": "cd client && yarn start",
     "install:client": "cd client && npm install",

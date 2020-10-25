@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Sergiusz Pu",
   "license": "MIT",
+  "engines": {
+    "node": "12.18.3"
+  },
   "scripts": {
     "start": "npm-run-all -p -l start:*",
     "start:server": "cd server && yarn start",

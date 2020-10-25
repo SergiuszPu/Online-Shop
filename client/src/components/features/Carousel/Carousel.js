@@ -10,7 +10,7 @@ const items = [
   {
     src: Img1,
     altText: 'Slide 1',
-    caption: 'only in Online-Shop',
+    caption: 'onlyq in Online-Shop',
     header: 'best prices',
     key: '1'
   },

@@ -21,8 +21,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
-
 // connects our back end code with the database
 mongoose.connect(config.DB, { useNewUrlParser: true });
 let db = mongoose.connection;

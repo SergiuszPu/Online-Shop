@@ -183,7 +183,7 @@ export const loadProductsRequest = () => {
     dispatch(startRequest());
     try {
       let res = await axios.get(`${API_URL}/products`);
-      await new Promise((resolve, reject) => setTimeout(resolve, 2000));
+      // await new Promise((resolve, reject) => setTimeout(resolve, 2000));
       dispatch(loadProducts(res.data));
       dispatch(endRequest());
     } catch (err) {
@@ -199,7 +199,7 @@ export const loadSingleProductRequest = (id) => {
     try {
 
       let res = await axios.get(`${API_URL}/product/${id}`);
-      await new Promise((resolve, reject) => setTimeout(resolve, 2000));
+      // await new Promise((resolve, reject) => setTimeout(resolve, 2000));
       dispatch(loadSingleProduct(res.data));
       dispatch(endRequest());
 

@@ -46,4 +46,4 @@ db.on('error', (err) => console.log('Error ' + err));
 
 app.listen(process.env.PORT || config.PORT, () => {
     console.log('Server is running on port: 8000');
-  });
+});

@@ -8,6 +8,7 @@
     "node": "12.18.3"
   },
   "scripts": {
+    "build": "cd client && yarn install && yarn build",
     "start": "npm-run-all -p -l start:* && node app.js",
     "start:server": "cd server && yarn start",
     "start:client": "cd client && yarn start",

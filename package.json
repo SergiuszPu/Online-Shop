@@ -6,7 +6,7 @@
   "license": "MIT",
   "engines": {
     "node": "12.18.3",
-    "npm": "6.13.4"
+    "yarn": "1.22.4"
   },
   "scripts": {
     "start": "npm-run-all -p -l start:* && node app.js",
@@ -14,9 +14,7 @@
     "start:client": "cd client && yarn start",
     "install:client": "cd client && npm install",
     "install:server": "cd server && npm install",
-    "postinstall": "run-p install:*",
-    "build": "cd client && yarn install && yarn build"
-    
+    "postinstall": "run-p install:*" 
   },
   "dependencies": {
     "firebase-tools": "^8.13.1",

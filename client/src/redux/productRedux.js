@@ -183,7 +183,7 @@ export const loadProductsRequest = () => {
 
     dispatch(startRequest());
     try {
-      let res = await axios.get(`${BASE_URL}${API_URL}/products`);
+      let res = await axios.get(`${BASE_URL}${API_URL}/product`);
       // await new Promise((resolve, reject) => setTimeout(resolve, 2000));
       dispatch(loadProducts(res.data));
       dispatch(endRequest());

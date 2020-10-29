@@ -1,3 +1,3 @@
 # Online-Shop
 
-online-shop-b03f1.firebaseapp.com
+https://infinite-plateau-66037.herokuapp.com/

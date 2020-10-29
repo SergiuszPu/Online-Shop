@@ -44,6 +44,6 @@ db.on('error', (err) => console.log('Error ' + err));
 //     console.log('Server is running on port:', config.PORT);
 // });
 
-app.listen(process.env.PORT || config.PORT, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('Server is running on port: 8000');
 });

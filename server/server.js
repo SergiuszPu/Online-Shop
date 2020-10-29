@@ -22,10 +22,10 @@ app.use((req, res, next) => {
 });
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static(path.join(__dirname, '/../client/build')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/client/build/index.html'));
+    res.sendFile(path.join(__dirname, '/../client/build/index.html'));
 });
 // connects our back end code with the database
 mongoose.connect(config.DB, { useNewUrlParser: true, useUnifiedTopology: true });

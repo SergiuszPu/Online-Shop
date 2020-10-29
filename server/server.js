@@ -15,7 +15,9 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/api', productRoutes);
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false,
+  }));
 app.use((req, res, next) => {
     mongoSanitize(req.body);
     next();

@@ -5,7 +5,8 @@
   "author": "Sergiusz Pu",
   "license": "MIT",
   "engines": {
-    "node": "12.18.3"
+    "node": "12.18.3",
+    "npm": "6.13.4"
   },
   "scripts": {
     "start": "npm-run-all -p -l start:* && node app.js",

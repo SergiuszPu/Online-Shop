@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import uuid from 'uuidv4';
+import v4 from 'uuid/v4';
 import { Link } from 'react-router-dom';
 
 import Spinner from '../../common/Spinner/Spinner';
@@ -35,7 +35,7 @@ const Summary = (props) => {
                             </thead>
                             <tbody>
                                 {cart.map(el =>
-                                    <tr key={uuid()}>
+                                    <tr key={v4()}>
                                         <td>{el.name}</td>
                                         <td>${el.price}</td>
                                         <td>{el.qty}</td>

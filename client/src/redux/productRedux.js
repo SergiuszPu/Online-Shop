@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { API_URL } from '../config';
-import { BASE_URL } from '../config';
 
 // action name creator
 const reducerName = 'products';
@@ -183,7 +182,7 @@ export const loadProductsRequest = () => {
 
     dispatch(startRequest());
     try {
-      let res = await axios.get(`${BASE_URL}${API_URL}/product`);
+      let res = await axios.get(`${API_URL}/products`);
       // await new Promise((resolve, reject) => setTimeout(resolve, 2000));
       dispatch(loadProducts(res.data));
       dispatch(endRequest());
@@ -199,7 +198,7 @@ export const loadSingleProductRequest = (id) => {
     dispatch(startRequest());
     try {
 
-      let res = await axios.get(`${BASE_URL}${API_URL}/product/${id}`);
+      let res = await axios.get(`${API_URL}/product/${id}`);
       // await new Promise((resolve, reject) => setTimeout(resolve, 2000));
       dispatch(loadSingleProduct(res.data));
       dispatch(endRequest());
@@ -219,7 +218,8 @@ export const loadProductsByPageRequest = (page, productsPerPage) => {
       const startAt = (page - 1) * productsPerPage;
       const limit = productsPerPage;
 
-      let res = await axios.get(`${BASE_URL}${API_URL}/products/range/${startAt}/${limit}`);
+      let res = await axios.get(`${API_URL}/products/range/${startAt}/${limit}`);
+
       const payload = {
         products: res.data.products,
         amount: res.data.amount,

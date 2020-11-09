@@ -34,7 +34,7 @@ const loadTestData = async () => {
     {
       id: '4234d',
       tag: '',
-      img: { src:'../../../images/1.jpg'},
+      img: { src:'../../../images/scott.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
@@ -43,7 +43,7 @@ const loadTestData = async () => {
     {
       id: '5234e',
       tag: '',
-      img: { src: '../../../images/2.jpg'},
+      img: { src: '../../../images/yt2.jpg'},
       name: 'Canyon Sender CFR',
       price: 26666.00,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
